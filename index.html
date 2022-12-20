@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Decodificador</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="src/css/main.css">
+  </head>
+  <body>
+    <header>
+      <img src="./src/images/Vector.svg" alt="logo alura">
+    </header>
+    <main>
+      <section id="criptografar">
+        <div class="base">
+          <textarea id="textConvert" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+          <div class="alert-text">
+            <i class="fa-solid fa-circle-exclamation"></i> 
+            <span>Apenas letras minúsculas e sem acento.</span>
+          </div>
+          <div class="buttons-area">
+            <button id="cript">Criptografar</button>
+            <button id="descript">Descriptografar</button>
+          </div>
+        </div>
+      </section>
+      <section id="descriptografar">
+        <div class="base">
+          <div id="descriText">
+            <div class="box-img">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="./src/images/search.svg" alt="search imagem" class="search-img">
+                <img src="" alt="" class="search-img">
+              </picture>
+            </div>
+              <h1>Nenhuma mensagem encontrada</h1>
+              <textarea readonly id="textDescriConvert" placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+              <button id="buttonCopy">Copiar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido por <a href="#">Gustavo Vieira</a></p>
+    </footer>
+    <script src="https://kit.fontawesome.com/7adf1fbf24.js" crossorigin="anonymous"></script>
+    <script src="./src/scripts/main.js"></script>
+  </body>
+</html>
